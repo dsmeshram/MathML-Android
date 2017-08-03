@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="to.hurix.com.letx.MainActivity">
+
+   <TextView
+       android:id="@+id/letestlabel"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textSize="16dp"
+       android:background="@color/colorPrimary"
+       android:textColor="#FFFFFF"
+       android:textStyle="bold"
+       android:text="latest-MathJax" />
+   <EditText
+       android:id="@+id/editText"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+       android:ems="10"
+       android:textSize="15dp"
+       android:layout_alignParentBottom="true"
+       android:hint="Enter Letx here"
+       android:text="@string/templetx"
+       />
+
+   <to.hurix.com.letx.LETXViewer
+       android:id="@+id/letxView"
+       android:layout_below="@+id/letestlabel"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+
+       tools:layout_editor_absoluteX="8dp"
+       tools:layout_editor_absoluteY="8dp"
+       android:layout_above="@+id/editText"></to.hurix.com.letx.LETXViewer>
+
+
+
+
+</RelativeLayout>
